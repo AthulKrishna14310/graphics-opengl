@@ -12,10 +12,12 @@ void display(void)
         if(p<0){
             xa=xa+1;
             plot(xa,ya);
+	    p=p+2*dy;
         }else{
             xa=xa+1;
             ya=ya+1;
             plot(xa,ya);
+	    p=p+2*dy-2*dx;
         }
     }
     done();
